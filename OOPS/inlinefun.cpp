@@ -8,7 +8,12 @@ int add(int a, int b)
 
 int main()
 {
+    int x, y;
+    cout << "enter: ";
+    cin >> x;
+    cout << "enter: ";
+    cin >> y;
 
-    int result = add(4, 5);
-    cout << result;
+    int result = add(x, y);
+    cout << result << endl;
 }
