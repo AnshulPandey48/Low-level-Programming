@@ -1,6 +1,12 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-inline  
-int main(){
-
+inline int add(int a, int b)
+{
+    return a + b;
+}
+int main()
+{
+    int a = 4, b = 10;
+    int result = add(a, b);
+    cout << result;
 }
