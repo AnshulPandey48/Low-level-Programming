@@ -3,9 +3,7 @@ using namespace std;
 class abc
 {
 public:
-    void show(){
-        cout << "hello " << endl;
-    }
+    void show();
 };
 void abc ::show()
 {
