@@ -5,6 +5,7 @@ class devil
     int power;
 
 public:
+// parameterezed cosntructor
     void display(int p)
     {
         power = p;
