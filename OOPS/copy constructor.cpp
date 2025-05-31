@@ -1,16 +1,8 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-class demon
-{
+class devil{
     int *power;
+}
+int main(){
 
-public:
-    demon(int p)
-    {
-        power = new int;
-        *power = p;
-    }
-};
-int main()
-{
 }
