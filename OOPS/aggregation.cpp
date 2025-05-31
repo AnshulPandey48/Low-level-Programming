@@ -13,9 +13,13 @@ public:
         cout << "students : " << name << endl;
     }
 };
-class classroom{
-    vector<student*> students;
-    
+class classroom
+{
+    vector<student *> students;
+    void addstudents(student s)
+    {
+        students.push_back(s*);
+    }
 };
 int main()
 {
