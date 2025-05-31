@@ -11,7 +11,9 @@ public:
 };
 class classroom
 {
-    vector<student*> students; // aggregation via pointer
+    vector<student *> students; // pointer to a student object
+    public:
+    
 };
 int main()
 {
