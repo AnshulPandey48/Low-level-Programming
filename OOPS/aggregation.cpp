@@ -13,7 +13,9 @@ class classroom
 {
     vector<student *> students; // pointer to a student object
     public:
-    
+    void addstudents(student*s){
+        students.push_back(s);
+    }
 };
 int main()
 {
