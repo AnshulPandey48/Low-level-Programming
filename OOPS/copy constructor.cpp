@@ -25,6 +25,10 @@ public:
 };
 int main()
 {
-    devil lucifer;
-    lucifer(34);
+    devil lucifer(666);
+    lucifer.show();
+
+    devil belial = lucifer;
+    belial.show();
+    return 0;
 }
