@@ -1,34 +1,34 @@
 #include <bits/stdc++.h>
 using namespace std;
-class demon
-{
+
+class demon {
     int value = 100;
     int result;
 
 public:
-    demon(int x)
-    {
-         result = value * x;
+    // Constructor
+    demon(int x) {
+        result = value * x;
     }
-    void show()
-    {
-        cout << result << endl;
+
+    // Copy Constructor
+    demon(const demon &x) {
+        cout << "copy constructor called: " << endl;
+        value = x.value;
+        result = x.result;  // Copy the result as well
     }
-    // copy constructor making here
-    demon(demon &x)
-    {
-        cout << "copy constructor : "<< endl;
-        result = x.value;
-    }
-    void show(){
-        cout << result;
+
+    void show() {
+        cout << "Result: " << result << endl;
     }
 };
- int main()
-{
-demon lucifer(100);
-lucifer.show();
 
-demon belial = lucifer;
-belial.show();
+int main() {
+    demon lucifer(100);  // result = 100 * 100 = 10000
+    lucifer.show();
+
+    demon belial = lucifer;  // Copy constructor is called here
+    belial.show();           // should print same result
+
+    return 0;
 }
