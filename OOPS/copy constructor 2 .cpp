@@ -9,6 +9,10 @@ class demon{
     void show(){
         cout << result << endl;
     }
+    // copy constructor making here
+    demon(demon &x){
+        int result = value*x;
+    }
 }
 int main(){
 
