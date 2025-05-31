@@ -29,7 +29,13 @@ public:
             s->display();
         }
     }
+
+    ~classroom()
+    {
+        cout << "classroom deleted" << endl;
+    }
 };
+
 int main()
 {
     student s1("lucifer");
@@ -38,5 +44,7 @@ int main()
     c.addstudent(&s1);
     c.addstudent(&s2);
     c.showall();
+    cout << endl;
+    s1.display();
     return 0;
 }
