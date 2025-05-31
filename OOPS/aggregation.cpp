@@ -17,25 +17,11 @@ public:
 class classroom
 {
 public:
-    vector<student *> students;
-    void addstudents(student *s)
-    {
-        students.push_back(s);
-    }
-    void showall()
-    {
-        for (auto s : students)
-        {
-            s->display();
-        }
+    vector<student*> students; // pointer storing vector
+    void addstudent(student*s){
+    
     }
 };
-int main(){
-    student s1("lucifer");
-    student s2("belial");
-    classroom c;
-    c.addstudents(&s1);
-    c.addstudents(&s2);
-    c.showall();
-    return 0;
+int main()
+{
 }
