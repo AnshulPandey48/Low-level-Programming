@@ -30,7 +30,9 @@ public:
 };
 int main()
 {
-    demon lucifer(4);
+    int x = 5;
+    demon lucifer(x);
     lucifer.show();
-    demon belial = lucifer(5);
+    demon belial = lucifer;
+    belial.show();
 }
