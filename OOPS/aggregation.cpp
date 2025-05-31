@@ -10,23 +10,14 @@ public:
     }
     void show()
     {
-        cout << "students  : " << name << endl;
+        cout << "student name : " << name << endl;
     }
 };
-
-class classrooms
+class classroom
 {
-public:
     vector<student *> students;
-    void addstudents(student *s)
-    {
-        students.push_back(s);
-    }
-    void showall(){
-        for(auto s : students){
-            s -> show();
-        }
-    }
+    
+
 };
 int main()
 {
