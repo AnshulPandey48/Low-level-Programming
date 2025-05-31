@@ -1,8 +1,15 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-class devil{
+class devil
+{
     int *power;
-}
-int main(){
 
+public:
+    devil(int p){
+        power = new int; // power will store the memory address new int is dynamic memory alocate
+        
+    }
+};
+int main()
+{
 }
