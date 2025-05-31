@@ -14,7 +14,8 @@ public:
 };
 
 class classrooms{
-    
+    public:
+    vector<student*> students;
 };
 int main()
 {
