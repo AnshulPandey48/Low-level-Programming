@@ -8,13 +8,24 @@ public:
     {
         name = n;
     }
+    void show(){
+        cout << "students : " << name << endl;
+    }
 };
 class classroom
 {
     vector<student *> students; // pointer to a student object
-    public:
-    void addstudents(student*s){
+public:
+    void addstudents(student *s)
+    {
         students.push_back(s);
+    }
+    void showall()
+    {
+        for (auto s : students)
+        {
+            s->show();
+        }
     }
 };
 int main()
