@@ -8,15 +8,25 @@ public:
     {
         name = n;
     }
-    void show(){
+    void show()
+    {
         cout << "students  : " << name << endl;
     }
 };
 
-class classrooms{
-    public:
-    vector<student*> students;
-    
+class classrooms
+{
+public:
+    vector<student *> students;
+    void addstudents(student *s)
+    {
+        students.push_back(s);
+    }
+    void showall(){
+        for(auto s : students){
+            s -> show();
+        }
+    }
 };
 int main()
 {
