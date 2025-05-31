@@ -15,7 +15,16 @@ public:
     {
         result = x.value + x.result;
     }
+    void show()
+    {
+        cout << result << endl;
+    }
 };
 int main()
 {
+    demon lucifer(100);
+    lucifer.show();
+    demon belial = lucifer;
+    belial.show();
+    return 0;
 }
