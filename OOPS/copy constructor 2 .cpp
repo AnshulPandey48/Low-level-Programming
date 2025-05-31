@@ -1,17 +1,21 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-class demon{
+class demon
+{
     int value = 100;
     int result = 0;
-    public:
-    demon(int x){
+
+public:
+    demon(int x)
+    {
         result = x + value;
     }
     // copy constructor
-    demon(demon &x){
-        result = demon.x + value;
+    demon(demon &x)
+    {
+        result = x.value + x.result;
     }
-}
-int main(){
-
+};
+int main()
+{
 }
