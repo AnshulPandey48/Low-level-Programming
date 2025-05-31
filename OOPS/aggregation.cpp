@@ -15,6 +15,7 @@ public:
 };
 class classroom
 {
+public:
     vector<student *> students;
     void addstudents(student *s) // So students is a vector of pointers to Student objects.
     {
@@ -33,5 +34,8 @@ int main()
     student s1("lucifer");
     student s2("belial");
     classroom c;
-
+    c.addstudents(&s1);
+    c.addstudents(&s2);
+    c.showstudent();
+    return 0;
 }
