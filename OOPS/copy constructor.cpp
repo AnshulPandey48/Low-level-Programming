@@ -15,11 +15,16 @@ public:
     devil(const devil &d)
     {
         power = new int;
-        *power = *(d.power);
+        *power = *(d.power); // copy value , now address
         cout << "copy constructor called" << endl;
     }
     void show()
+    {
+        cout << "power:  " << *power << endl;
+    }
 };
 int main()
 {
+    devil lucifer;
+    lucifer(34);
 }
