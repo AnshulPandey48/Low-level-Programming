@@ -8,7 +8,8 @@ public:
     {
         name = n;
     }
-    void show(){
+    void show()
+    {
         cout << "students : " << name << endl;
     }
 };
@@ -30,4 +31,12 @@ public:
 };
 int main()
 {
+    student s1("Lucifer");
+    student s2("Belial");
+
+    classroom c;
+    c.addstudents(&s1);
+    c.addstudents(&s2);
+
+    c.showall();
 }
