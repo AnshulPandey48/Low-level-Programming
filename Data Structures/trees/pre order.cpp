@@ -1,3 +1,4 @@
+// root , left , right
 #include <bits/stdc++.h>
 using namespace std;
 struct node
@@ -13,6 +14,10 @@ struct node
 };
 void preorder(node *head)
 {
+    if (head == nullptr)
+    {
+        return ;
+    }
     cout << head->data << " ";
     preorder(head->left);
     preorder(head->right);
