@@ -3,7 +3,12 @@ using namespace std;
 class vectoradd
 {
 public:
-    float x, y;
+    int x, y;
+    vectoradd(int a = 0, int b = 0)
+    {
+        x = 0;
+        b = 0;
+    }
     vectoradd operator+(const vectoradd &obj)
     {
         vectoradd res;
@@ -11,7 +16,17 @@ public:
         res.y = y + obj.y;
         return res;
     }
+    void display()
+    {
+        cout << x << " " << y;
+    }
 };
-int main(){
-    
+int main()
+{
+    vectoradd a(3, 4);
+    vectoradd b(5, 4);
+    vectoradd c;
+    c = a + b;
+    c.display();
+    return 0;
 }
