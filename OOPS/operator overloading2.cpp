@@ -1,10 +1,16 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-class mycomplex{
-    mycomplex(){
-        
+class mycomplex
+{
+    int real , imag;
+public:
+    mycomplex(int r = 0, int i = 0)
+    {
+        real = r;
+        imag = i;
     }
-}
-int main(){
+};
 
+int main()
+{
 }
