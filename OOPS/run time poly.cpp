@@ -1,4 +1,3 @@
-// must be inherited class, same fun , same parameters
 #include <bits/stdc++.h>
 using namespace std;
 class demon
@@ -6,22 +5,18 @@ class demon
 public:
     virtual void display()
     {
-        cout << "demons here are\n";
+        cout << "demons are here " << endl;
     }
 };
-
 class lucifer : public demon
 {
-public:
     void display() override
     {
-        cout << "lucifer here now\n";
+        cout << "lucifer is here now " << endl;
     }
 };
 int main()
 {
-    // demon d;
-
     demon *d;
     lucifer l;
     d = &l;
