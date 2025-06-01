@@ -1,29 +1,26 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
-class complex
-{
+
+class MyComplex {
 public:
     int real, imag;
-    complex(int r = 0, int i = 0)
-    {
-        real = r;
-        imag = i;
-    }
-    // operator overloading
-    complex operator+(complex const &obj)
-    {
-        complex res;
+    MyComplex(int r = 0, int i = 0) : real(r), imag(i) {}
+
+    MyComplex operator+(const MyComplex &obj) const {
+        MyComplex res;
         res.real = real + obj.real;
         res.imag = imag + obj.imag;
         return res;
     }
-    void display()
-    {
+
+    void display() const {
         cout << real << " + " << imag << "i" << endl;
     }
 };
-int main()
-{
-    complex c1(2,3);
-    
+
+int main() {
+    MyComplex c1(2, 3);
+    MyComplex c2(3, 4);
+    MyComplex c3 = c1 + c2;
+    c3.display();
 }
