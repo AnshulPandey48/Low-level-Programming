@@ -9,7 +9,11 @@ public:
         x = a;
         y = b;
     }
-    vectoradd operator +(const&obj)
-
+    vectoradd operator+(const vectoradd &obj)
+    {
+        vectoradd res;
+        res = x + obj.x;
+        res = y + obj.y;
+        return res;
     }
 };
