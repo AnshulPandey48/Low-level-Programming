@@ -10,8 +10,11 @@ struct node
         left = right = nullptr;
     }
 };
-void postorder(node*head){
-    
+void postorder(node *head)
+{
+    postorder(head->left);
+    postorder(head->right);
+    cout << head->data << " ";
 }
 int main()
 {
