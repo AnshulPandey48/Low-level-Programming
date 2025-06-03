@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
-class employee
+
+// array osme tune stoer objects 
+class employee  /// array of objects ka mtlab yhi  objects
 {
     int id;
     char name[30];
@@ -25,7 +27,7 @@ int main()
     int n;
     cout << "enter the number of employes: ";
     cin >> n;
-    employee emp[n];
+    employee emp[n]; /// array of objects
     for (int i = 0; i < n; i++)
     {
         cout << "\nEnter details of employee " << i + 1 << endl;
