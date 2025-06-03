@@ -1,3 +1,8 @@
+
+// single fun difference forms aditya student college ,, son in family , sportman gym 
+
+// run time poly - > function overriding   same fun , same parameters
+// virtual keyword is used
 #include <bits/stdc++.h>
 using namespace std;
 class demon
