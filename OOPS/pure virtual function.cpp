@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
-// pure virutal has no implementation in base class
+// pure virutal has no implementation in base class  koi method nahi hota base me
 class demon
 {
 public:
-    virtual void haunt() = 0; // syntax of pure virutal function
+    virtual void haunt() = 0;  // syntax of pure virutal function
 };
 class lucifer : public demon
 {
