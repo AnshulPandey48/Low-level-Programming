@@ -2,6 +2,8 @@
 using namespace std;
 class demon
 {
+private:
+    // kuch nai likha hai  mtlab private hai thik hai
     int evil = 666;
     friend void show(demon d);
 };
