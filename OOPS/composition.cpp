@@ -1,6 +1,8 @@
 // you are born with me you will die with me
 #include <bits/stdc++.h>
 using namespace std;
+
+// human , heart  human mara heart marjayega , heart mara human marjayega 
 class heart
 {
 public:

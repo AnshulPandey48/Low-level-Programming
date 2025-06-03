@@ -1,4 +1,7 @@
 #include <bits/stdc++.h>
+
+// has a relationship image kr eik ,student -> aggregation
+
 using namespace std;
 class student
 {
@@ -13,7 +16,6 @@ public:
         cout << "students : " << name << endl;
     }
 };
-
 class classroom
 {
 public:
