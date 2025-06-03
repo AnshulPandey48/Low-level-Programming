@@ -1,8 +1,8 @@
-// classes and objects   class -> blueprint not allocated memory,  
+// classes and objects   class -> blueprint not allocated memory,
 
 #include <bits/stdc++.h>
 using namespace std;
- inline int add(int a, int b)
+inline int add(int a, int b)
 {
     return a + b;
 }
@@ -12,3 +12,5 @@ int main()
     int result = add(a, b);
     cout << result;
 }
+
+// faster and suitable for smaller functions

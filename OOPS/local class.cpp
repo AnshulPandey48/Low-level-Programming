@@ -1,8 +1,9 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-class local{
+class students
+{
     
-}
-int main(){
-
+};
+int main()
+{
 }
