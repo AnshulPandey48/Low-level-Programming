@@ -1,11 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
+// :: to access a static member or to define a member outside the class
 class abc
 {
 public:
     void show();
 };
-void abc ::show()
+void abc :: show()
 {
     cout << "hello bhosad" << endl;
 }
