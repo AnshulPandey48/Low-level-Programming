@@ -5,6 +5,7 @@ class abc
 public:
     void display()
     {
+        
         cout << "default constructor" << endl;
     }
 };
