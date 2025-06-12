@@ -1,12 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
+// all type of insertions are here 
 struct node
 {
     int data;
     node *next;
     node(int x)
     {
-        data = x;
+        data = x; 
         next = nullptr;
     }
 };
@@ -35,6 +36,22 @@ node *insertatpos(node *head, int key, int val)
     }
     node *newnode = new node(val);
     newnode->next = curr->next;
+    curr->next = newnode;
+    return head;
+}
+
+node *insertatend(node *head, int val)
+{
+    if (head == nullptr)
+    {
+        return;
+    }
+    node *curr = head;
+    while (curr != nullptr)
+    {
+        curr = curr->next;
+    }
+    node *newnode = new node(val);
     curr->next = newnode;
     return head;
 }
