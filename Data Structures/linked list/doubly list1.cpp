@@ -36,9 +36,15 @@ node *insertatend(node *head, int val)
         {
             curr = curr->next;
         }
-        curr -> next = newnode;
-        newnode -> prev = curr;
+        curr->next = newnode;
+        newnode->prev = curr;
     }
+    return head;
+}
+// insert at k pos
+
+node*insertatpos(node*head,int k , int val){
+    
 }
 
 int main()
