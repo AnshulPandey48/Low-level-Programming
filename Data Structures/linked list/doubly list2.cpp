@@ -31,13 +31,22 @@ node *deletefromlast(node *head)
     if (head == nullptr)
         return nullptr;
     node *curr = head;
-    while (curr->next!= nullptr)
+    while (curr->next != nullptr)
     {
-        curr = curr -> next;
+        curr = curr->next;
     }
-    if(curr -> prev )
-    
+    if (curr->prev != nullptr)
+    {
+        curr->prev->next = nullptr;
+    }
+    delete (curr);
+    return head;
+}
 
+// delete from kth position
+
+node*deleteatk(node*head,int k){
+    
 }
 int main()
 {
