@@ -25,14 +25,25 @@ node *deleteatbegining(node *head)
 // deletion at the end
 node *deleteatend(node *head)
 {
-    node*temp = head;
-    while (temp -> next != nullptr)
+    if (head == nullptr)
+        return nullptr;
+    if (head->next == nullptr)
     {
-        temp = temp -> next;
+        delete head;
+        return nullptr;
     }
-    
-    
+    node *temp = head;
+    while (temp->next->next != nullptr)
+    {
+        temp = temp->next;
+    }
+    delete (temp->next);
+    temp->next = nullptr;
+    return head;
 }
+
+// deletion at the kth position
+
 int main()
 {
 }
