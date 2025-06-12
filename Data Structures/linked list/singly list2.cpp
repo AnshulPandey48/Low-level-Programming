@@ -11,8 +11,28 @@ struct node
         next = nullptr;
     }
 };
+// deletion at the begining
+node *deleteatbegining(node *head)
+{
+    if (head == nullptr)
+        return nullptr;
+    node *temp = head;
+    head = head->next;
+    delete temp;
+    return head;
+}
 
+// deletion at the end
+node *deleteatend(node *head)
+{
+    node*temp = head;
+    while (temp -> next != nullptr)
+    {
+        temp = temp -> next;
+    }
+    
+    
+}
 int main()
 {
-    
 }
