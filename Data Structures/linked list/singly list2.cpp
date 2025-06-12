@@ -54,13 +54,16 @@ node *deleteatpos(node *head, int k)
         delete head;
         return nullptr;
     }
-    node*temp = head;
-    for(int i = 1 ; i < k-1 && temp != nullptr;i++){
-        temp = temp -> next;
+    node *temp = head;
+    for (int i = 1; i < k - 1 && temp != nullptr; i++)
+    {
+        temp = temp->next;
     }
-    if(temp == nullptr) return head;
-    delete(temp -> next);
-    temp -> next = temp -> next -> next;
+    if (temp == nullptr)
+        return head;
+    node *todelete = temp->next;
+    temp->next = todelete->next;
+    delete todelete;
     return head;
 }
 int main()
