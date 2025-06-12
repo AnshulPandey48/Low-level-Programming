@@ -14,7 +14,11 @@ struct node
  
 // insertion at front
 node*insertatfirst(node*head,int val){
-    
+    node*newnode = new node(val);
+    newnode -> next = head;
+    if(head != nullptr){
+        head -> prev = newnode;
+    }
 }
 int main()
 {
