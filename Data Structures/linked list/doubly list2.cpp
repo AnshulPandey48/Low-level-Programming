@@ -24,6 +24,11 @@ node *deletFront(node *head)
     delete (temp);
     return head;
 }
+// delete from endd
+
+node*deletefromlast(node*head){
+    
+}
 int main()
 {
 }
