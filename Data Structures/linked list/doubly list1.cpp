@@ -57,7 +57,17 @@ node *insertatpos(node *head, int k, int val)
     node *curr = head;
     for (int i = 1; i < k - 1 && curr != nullptr; i++)
     {
+        curr = curr->next;
     }
+    if (curr == nullptr)
+        return nullptr;
+    newnode->prev = curr;
+    curr->next = newnode;
+    if (newnode->next != nullptr)
+    {
+        newnode->next->prev = newnode;
+    }
+    return head;
 }
 int main()
 {
