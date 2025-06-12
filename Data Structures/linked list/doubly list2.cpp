@@ -26,8 +26,18 @@ node *deletFront(node *head)
 }
 // delete from endd
 
-node*deletefromlast(node*head){
+node *deletefromlast(node *head)
+{
+    if (head == nullptr)
+        return nullptr;
+    node *curr = head;
+    while (curr->next!= nullptr)
+    {
+        curr = curr -> next;
+    }
+    if(curr -> prev )
     
+
 }
 int main()
 {
