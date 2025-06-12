@@ -21,7 +21,7 @@ node *insertathead(node *head, int val)
     return newnode;
 }
 // insert at a or after a custom node like insert after 54
-node *insertatpos(node *head, int key, int val)
+node *insertaftersomeElement(node *head, int key, int val)
 {
     node *curr = head;
     while (curr != nullptr)
