@@ -14,4 +14,5 @@ struct node
 
 int main()
 {
+    
 }
