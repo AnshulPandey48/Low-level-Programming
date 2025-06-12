@@ -43,7 +43,26 @@ node *deleteatend(node *head)
 }
 
 // deletion at the kth position
-
+node *deleteatpos(node *head, int k)
+{
+    if (head == nullptr)
+    {
+        return nullptr;
+    }
+    if (k == 1)
+    {
+        delete head;
+        return nullptr;
+    }
+    node*temp = head;
+    for(int i = 1 ; i < k-1 && temp != nullptr;i++){
+        temp = temp -> next;
+    }
+    if(temp == nullptr) return head;
+    delete(temp -> next);
+    temp -> next = temp -> next -> next;
+    return head;
+}
 int main()
 {
 }
