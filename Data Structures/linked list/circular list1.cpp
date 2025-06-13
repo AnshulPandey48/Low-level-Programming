@@ -28,9 +28,14 @@ node *insertatfirst(node *last, int val)
         newnode->next = newnode;
         return newnode;
     }
-    newnode -> next = last-> next;
-    last -> next = newnode;
+    newnode->next = last->next;
+    last->next = newnode;
     return last;
+}
+node *insertatend(node *last, int val)
+{
+    node *newnode = new node(val);
+    
 }
 int main()
 {
