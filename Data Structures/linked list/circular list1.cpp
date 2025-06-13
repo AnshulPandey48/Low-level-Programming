@@ -10,8 +10,28 @@ struct node
         next = nullptr;
     }
 };
-
+node *insertatemptylist(node *last, int val)
+{
+    if (last != nullptr)
+        return last;
+    node *newnode = new node(val);
+    newnode->next = newnode;
+    last = newnode;
+    return last;
+}
+// insert at begining of the circular list
+node *insertatfirst(node *last, int val)
+{
+    node *newnode = new node(val);
+    if (last == nullptr)
+    {
+        newnode->next = newnode;
+        return newnode;
+    }
+    newnode -> next = last-> next;
+    last -> next = newnode;
+    return last;
+}
 int main()
 {
-
 }
