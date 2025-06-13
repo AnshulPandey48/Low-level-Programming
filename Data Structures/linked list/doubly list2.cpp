@@ -45,8 +45,21 @@ node *deletefromlast(node *head)
 
 // delete from kth position
 
-node*deleteatk(node*head,int k){
-    
+node *deleteatk(node *head, int k)
+{
+    if (head == nullptr)
+        return nullptr;
+    if (k == 1)
+    {
+        node *temp = head;
+        head = head->next;
+        if (head != nullptr)
+        {
+            head->prev = nullptr;
+        }
+        delete temp;
+        return head;
+    }
 }
 int main()
 {
