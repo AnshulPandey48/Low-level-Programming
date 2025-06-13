@@ -13,5 +13,15 @@ struct node
 node *front = nullptr, *rear = nullptr;
 node *enqueue(int x)
 {
-    if (front == -1)
+    node *temp = new node(x);
+    if (rear == nullptr)
+        front = rear = temp;
+    else
+    {
+        rear->next = temp;
+        rear = temp;
+    }
+}
+node*dequeue(){
+    
 }
