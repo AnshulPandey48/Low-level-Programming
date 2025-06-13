@@ -60,6 +60,18 @@ node *deleteatk(node *head, int k)
         delete temp;
         return head;
     }
+    node *curr = head;
+    for (int i = 1; i < k - 1 && curr != nullptr; i++)
+    {
+        curr = curr -> next;
+    }
+    if(curr == nullptr){
+        return head;
+    }
+    node*temp = curr -> next;
+    if(curr != nullptr){
+        curr -> next -> prev = curr -> next;
+    }
 }
 int main()
 {
