@@ -44,5 +44,5 @@ int peek()
 
 bool isempty()
 {
-    return top == -1;
+    return top == nullptr;
 }
