@@ -4,14 +4,21 @@ using namespace std;
 int queue[max];
 int front = -1, rear = -1;
 
-int  enqueue(int x)
+void enqueue(int x)
 {
     if (rear == max - 1)
     {
         cout << "queue overflow\n";
-        return;
+        return -1;
     }
     if (front == -1)
         front = 0;
-    return queue[++rear] = x;
+    queue[++rear] = x;
+}
+int dequeue(){
+    if(front == -1 || front > rear){
+        cout << "overflow\n";
+        return -1;
+    }
+    return queue[front++];
 }
