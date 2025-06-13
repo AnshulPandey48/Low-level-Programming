@@ -34,14 +34,19 @@ node *insertatbegining(node *last, int val)
 
 node *insertatend(node *tail, int val)
 {
-    node*newnode = new node(val);
-    if(tail== nullptr){
+    node *newnode = new node(val);
+    if (tail == nullptr)
+    {
         tail = newnode;
-        newnode -> next = newnode;
+        newnode->next = newnode;
     }
-    else{
-        
+    else
+    {
+        newnode->next = tail->next;
+        tail->next = newnode;
+        tail = newnode;
     }
+    return tail;
 }
 int main()
 {
