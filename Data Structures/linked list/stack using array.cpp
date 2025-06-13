@@ -1,28 +1,15 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
-#define MAX 1000
-
-int stack[MAX];
+#define max 100;
+int stack[max];
 int top = -1;
 
-void push(int x) {
-    if (top == MAX - 1) {
-        cout << "Stack Overflow\n";
-        return;
-    }
-    stack[++top] = x;
-}
-
-void pop(int x){
-    if(top == -1){
-        cout << "stack underflow\n";
+int push(int x)
+{
+    if (top == max - 1)
+    {
+        cout << "stack overflow\n";
         return -1;
     }
-    
-}
-
-
-
-int main() {
-
+    stack[++top] = x;
 }
