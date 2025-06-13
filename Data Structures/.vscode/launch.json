@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "version": "0.2.0",
   "configurations": [
@@ -9,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/venom/Documents/C Programming/Data Structures",
-      "program": "/home/venom/Documents/C Programming/Data Structures/build/Debug/outDebug",
+      "cwd": "/home/venom/Low-level-Programming/Data Structures/linked list",
+      "program": "/home/venom/Low-level-Programming/Data Structures/linked list/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
@@ -22,29 +21,4 @@
       ]
     }
   ]
-=======
-{
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "C/C++ Runner: Debug Session",
-      "type": "cppdbg",
-      "request": "launch",
-      "args": [],
-      "stopAtEntry": false,
-      "externalConsole": false,
-      "cwd": "/home/venom/Documents/C Programming/Data Structures",
-      "program": "/home/venom/Documents/C Programming/Data Structures/build/Debug/outDebug",
-      "MIMode": "gdb",
-      "miDebuggerPath": "gdb",
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ]
-    }
-  ]
->>>>>>> 643dfa5 (Initial commit - Low-level programming)
 }
