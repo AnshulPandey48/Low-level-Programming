@@ -20,22 +20,28 @@ node *insertatemptylist(node *last, int val)
     return last;
 }
 // insert at begining of the circular list
-node *insertatfirst(node *last, int val)
+node *insertatbegining(node *last, int val)
 {
     node *newnode = new node(val);
+
     if (last == nullptr)
     {
         newnode->next = newnode;
-        return newnode;
+        last = newnode;
     }
-    newnode->next = last->next;
-    last->next = newnode;
     return last;
 }
-node *insertatend(node *last, int val)
+
+node *insertatend(node *tail, int val)
 {
-    node *newnode = new node(val);
-    
+    node*newnode = new node(val);
+    if(tail== nullptr){
+        tail = newnode;
+        newnode -> next = newnode;
+    }
+    else{
+        
+    }
 }
 int main()
 {
