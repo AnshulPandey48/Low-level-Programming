@@ -4,7 +4,7 @@ using namespace std;
 int queue[max];
 int front = -1, rear = -1;
 
-void enqueue(int x)
+int enqueue(int x)
 {
     if (rear == max - 1)
     {
@@ -15,8 +15,10 @@ void enqueue(int x)
         front = 0;
     queue[++rear] = x;
 }
-int dequeue(){
-    if(front == -1 || front > rear){
+int dequeue()
+{
+    if (front == -1 || front > rear)
+    {
         cout << "overflow\n";
         return -1;
     }
