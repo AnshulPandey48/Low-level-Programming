@@ -22,6 +22,15 @@ node *enqueue(int x)
         rear = temp;
     }
 }
-node*dequeue(){
-    
+int dequeue()
+{
+    if (front == nullptr)
+        return -1;
+    int val = front->data;
+    node *temp = front;
+    front = front->next;
+    if (front == nullptr)
+        rear = nullptr;
+    delete temp;
+    return val;
 }
