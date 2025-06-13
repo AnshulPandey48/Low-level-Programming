@@ -11,6 +11,7 @@ void enqueue(int x)
         cout << "queue overflow\n";
         return;
     }
-    void enqueue()
+    if(front == -1)front = 0;
+    
 
 }
