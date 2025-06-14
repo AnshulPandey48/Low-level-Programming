@@ -24,6 +24,7 @@ node *enqueue(int x)
 }
 int dequeue()
 {
+    
     if (front == nullptr)
         return -1;
     int val = front->data;
