@@ -7,10 +7,9 @@ int main()
     ptr[0] = &a;
     ptr[1] = &b;
     ptr[2] = &c;
-    for (int i = 0; i < count; i++)
+    for (int i = 0; i < 3; i++)
     {
-        /* code */
+        printf("%d\n", *(ptr[i]));
     }
-    
-
+    return 0;
 }
