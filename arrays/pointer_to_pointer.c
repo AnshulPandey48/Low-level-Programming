@@ -10,7 +10,7 @@ int main()
     printf("address of a : %p\n", ptr); // prints address of a
     
     printf("value of a : %d\n", **q); // prints value
-// a -> ptr -> q
+    // a -> ptr -> q
     
     return 0;
 }
