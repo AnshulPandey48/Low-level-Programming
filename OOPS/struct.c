@@ -16,5 +16,13 @@ void displaydetails(struct employee emp[],int n){
     }
 }
 int main(){
-    struct employee[30];
+    struct employee emp[20];
+    int n = 20;
+    for (int i = 0; i < n; i++)
+    {
+        printf("Enter name: ");
+        scanf("%s",emp[i].empname);
+    }
+    displaydetails(emp,n);
+    
 }
