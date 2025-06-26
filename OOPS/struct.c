@@ -1,28 +1,19 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-struct employee{
-    int empid;
-    char empname[20];
-    char deparment[30];
-    int empsal;
-};
-void displaydetails(struct employee emp[],int n){
-    for(int i = 0 ; i <= n ; i++){
-        printf("sallary : %d",emp[i].empsal);
-        printf("id: %d",emp[i].empid);
-        printf("name: %s",emp[i].empname);
-        printf("department name: %s",emp[i].deparment);
-    }
-}
-int main(){
-    struct employee emp[20];
-    int n = 20;
-    for (int i = 0; i < n; i++)
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main()
+{
+    FILE *fp;
+    int emp_id, search_id;
+    char emp_name[50];
+    fp = fopen("employe.txt", "w");
+    if (fp == NULL)
     {
-        printf("Enter name: ");
-        scanf("%s",emp[i].empname);
+        printf("file opening failed\n");
+        return 1;
     }
-    displaydetails(emp,n);
+    printf("Enter the name of employee:");
+    scanf("%s", &emp_name);
+    fprintf(fp, emp_name);
     
 }
